@@ -1,99 +1,99 @@
-# Geometry Calculations - 7 заданий
+# begin1 - begin7 - 7 заданий
 # Студентка: Милана Каратеева
 # Колледж: Алматинский экономический колледж, группа Web-3-5
 
-print("Geometry Calculations - 7 заданий")
+print("begin1 - begin7 - 7 заданий")
 
 print("#1 - Периметр квадрата")
 
-def calculate_square_perimeter(a):
+def perimetr_kvadrata(a):
     return 4 * a
 
-side_a_1 = 5
-perimeter_1 = calculate_square_perimeter(side_a_1)
-print(f"Дана сторона квадрата a = {side_a_1}")
-print(f"Периметр P = {perimeter_1}")
+storona_a_1 = 5
+perimetr_1 = perimetr_kvadrata(storona_a_1)
+print(f"Дана сторона квадрата a = {storona_a_1}")
+print(f"Периметр P = {perimetr_1}")
 print()
 
 print("#2 - Площадь квадрата")
 
-def calculate_square_area(a):
+def ploshad_kvadrata(a):
     return a ** 2
 
-side_a_2 = 7
-area_2 = calculate_square_area(side_a_2)
-print(f"Дана сторона квадрата a = {side_a_2}")
-print(f"Площадь S = {area_2}")
+storona_a_2 = 7
+ploshad_2 = ploshad_kvadrata(storona_a_2)
+print(f"Дана сторона квадрата a = {storona_a_2}")
+print(f"Площадь S = {ploshad_2}")
 print()
 
 print("#3 - Площадь и периметр прямоугольника")
 
-def calculate_rectangle_area_perimeter(a, b):
-    area = a * b
-    perimeter = 2 * (a + b)
-    return area, perimeter
+def ploshad_i_perimetr_pryamougolnika(a, b):
+    ploshad = a * b
+    perimetr = 2 * (a + b)
+    return ploshad, perimetr
 
-side_a_3 = 4
-side_b_3 = 6
-area_3, perimeter_3 = calculate_rectangle_area_perimeter(side_a_3, side_b_3)
-print(f"Даны стороны прямоугольника a = {side_a_3}, b = {side_b_3}")
-print(f"Площадь S = {area_3}")
-print(f"Периметр P = {perimeter_3}")
+storona_a_3 = 4
+storona_b_3 = 6
+ploshad_3, perimetr_3 = ploshad_i_perimetr_pryamougolnika(storona_a_3, storona_b_3)
+print(f"Даны стороны прямоугольника a = {storona_a_3}, b = {storona_b_3}")
+print(f"Площадь S = {ploshad_3}")
+print(f"Периметр P = {perimetr_3}")
 print()
 
 print("#4 - Длина окружности (по диаметру)")
 
 PI = 3.14
 
-def calculate_circle_circumference_by_diameter(d):
+def dlina_okruzhnosti_po_diametru(d):
     return PI * d
 
-diameter_4 = 10
-circumference_4 = calculate_circle_circumference_by_diameter(diameter_4)
-print(f"Дан диаметр окружности d = {diameter_4}")
-print(f"Длина окружности L = {circumference_4} (используя π = {PI})")
+diametr_4 = 10
+dlina_4 = dlina_okruzhnosti_po_diametru(diametr_4)
+print(f"Дан диаметр окружности d = {diametr_4}")
+print(f"Длина окружности L = {dlina_4} (используя π = {PI})")
 print()
 
 print("#5 - Объем и площадь поверхности куба")
 
-def calculate_cube_volume_surface_area(a):
-    volume = a ** 3
-    surface_area = 6 * (a ** 2)
-    return volume, surface_area
+def obyem_i_ploshad_poverhnosti_kuba(a):
+    obyem = a ** 3
+    ploshad_poverhnosti = 6 * (a ** 2)
+    return obyem, ploshad_poverhnosti
 
-edge_a_5 = 3
-volume_5, surface_area_5 = calculate_cube_volume_surface_area(edge_a_5)
-print(f"Дана длина ребра куба a = {edge_a_5}")
-print(f"Объем V = {volume_5}")
-print(f"Площадь поверхности S = {surface_area_5}")
+rebro_a_5 = 3
+obyem_5, ploshad_poverhnosti_5 = obyem_i_ploshad_poverhnosti_kuba(rebro_a_5)
+print(f"Дана длина ребра куба a = {rebro_a_5}")
+print(f"Объем V = {obyem_5}")
+print(f"Площадь поверхности S = {ploshad_poverhnosti_5}")
 print()
 
 print("#6 - Объем и площадь поверхности прямоугольного параллелепипеда")
 
-def calculate_parallelepiped_volume_surface_area(a, b, c):
-    volume = a * b * c
-    surface_area = 2 * (a * b + b * c + a * c)
-    return volume, surface_area
+def obyem_i_ploshad_poverhnosti_parallelepipeda(a, b, c):
+    obyem = a * b * c
+    ploshad_poverhnosti = 2 * (a * b + b * c + a * c)
+    return obyem, ploshad_poverhnosti
 
-edge_a_6 = 2
-edge_b_6 = 3
-edge_c_6 = 4
-volume_6, surface_area_6 = calculate_parallelepiped_volume_surface_area(edge_a_6, edge_b_6, edge_c_6)
-print(f"Даны длины ребер параллелепипеда a = {edge_a_6}, b = {edge_b_6}, c = {edge_c_6}")
-print(f"Объем V = {volume_6}")
-print(f"Площадь поверхности S = {surface_area_6}")
+rebro_a_6 = 2
+rebro_b_6 = 3
+rebro_c_6 = 4
+obyem_6, ploshad_poverhnosti_6 = obyem_i_ploshad_poverhnosti_parallelepipeda(rebro_a_6, rebro_b_6, rebro_c_6)
+print(f"Даны длины ребер параллелепипеда a = {rebro_a_6}, b = {rebro_b_6}, c = {rebro_c_6}")
+print(f"Объем V = {obyem_6}")
+print(f"Площадь поверхности S = {ploshad_poverhnosti_6}")
 print()
 
 print("#7 - Длина окружности и площадь круга (по радиусу)")
 
-def calculate_circle_circumference_area_by_radius(R):
-    circumference = 2 * PI * R
-    area = PI * (R ** 2)
-    return circumference, area
+def dlina_okruzhnosti_i_ploshad_kruga_po_radiusu(R):
+    dlina_okruzhnosti = 2 * PI * R
+    ploshad_kruga = PI * (R ** 2)
+    return dlina_okruzhnosti, ploshad_kruga
 
 radius_7 = 5
-circumference_7, area_7 = calculate_circle_circumference_area_by_radius(radius_7)
+dlina_okruzhnosti_7, ploshad_kruga_7 = dlina_okruzhnosti_i_ploshad_kruga_po_radiusu(radius_7)
 print(f"Дан радиус круга R = {radius_7}")
-print(f"Длина окружности L = {circumference_7} (используя π = {PI})")
-print(f"Площадь круга S = {area_7} (используя π = {PI})")
+print(f"Длина окружности L = {dlina_okruzhnosti_7} (используя π = {PI})")
+print(f"Площадь круга S = {ploshad_kruga_7} (используя π = {PI})")
 print()
