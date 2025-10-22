@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 8 - Бронирование билета в кино</title>
+</head>
+<body>
+    <h1>Задание 8: Бронирование билета в кино</h1>
+    <p>Студент: Милана Каратеева</p>
+    <p>Группа: Web-3-5</p>
+    
+    <form>
+        <p>
+            <label for="name">Имя:</label><br>
+            <input type="text" id="name" name="name">
+        </p>
+        
+        <p>
+            <label for="movie">Список фильмов:</label><br>
+            <select id="movie" name="movie">
+                <option value="movie1">Интерстеллар</option>
+                <option value="movie2">Тёмный рыцарь</option>
+                <option value="movie3">Матрица</option>
+            </select>
+        </p>
+        
+        <p>Выберите время:</p>
+        <p>
+            <input type="radio" id="time1" name="time" value="15:00">
+            <label for="time1">15:00</label>
+        </p>
+        
+        <p>
+            <input type="radio" id="time2" name="time" value="18:00">
+            <label for="time2">18:00</label>
+        </p>
+        
+        <p>
+            <input type="radio" id="time3" name="time" value="21:00">
+            <label for="time3">21:00</label>
+        </p>
+        
+        <p>
+            <button type="submit">Забронировать</button>
+        </p>
+    </form>
+</body>
+</html>
