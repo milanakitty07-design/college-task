@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Медиа-запросы</title>
+<style>
+  body {
+    background: green;
+    color: black;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  img {
+    width: 200px;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .blocks {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .block {
+    background: lightgray;
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+  }
+
+  .menu {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .menu button {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 800px) {
+    body {
+      background: lightblue;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .text {
+      color: red;
+    }
+  }
+
+  @media (max-width: 500px) {
+    img {
+      display: none;
+    }
+  }
+
+  @media (max-width: 999px) {
+    .blocks {
+      flex-direction: column;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .blocks {
+      flex-direction: row;
+    }
+  }
+
+  @media (max-width: 599px) {
+    .menu {
+      flex-direction: column;
+    }
+  }
+
+  @media (min-width: 600px) {
+    .menu {
+      flex-direction: row;
+    }
+  }
+</style>
+</head>
+<body>
+
+<img src="https://placehold.co/200" alt="картинка">
+
+<p class="text">Текст меняет цвет в зависимости от устройства</p>
+
+<div class="blocks">
+  <div class="block">Блок 1</div>
+  <div class="block">Блок 2</div>
+  <div class="block">Блок 3</div>
+</div>
+
+<div class="menu">
+  <button>Главная</button>
+  <button>О нас</button>
+  <button>Контакты</button>
+</div>
+
+</body>
+</html>

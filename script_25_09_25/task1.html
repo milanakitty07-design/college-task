@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Относительные единицы измерения</title>
+<style>
+  body {
+    font-size: 16px;
+    margin: 20px;
+  }
+  .container {
+    display: flex;
+  }
+  .half {
+    width: 50%;
+    border: 1px solid #333;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .parent-text {
+    font-size: 20px;
+    border: 1px dashed #666;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  .child-text {
+    font-size: 2em;
+    border: 1px solid #999;
+    padding: 5px;
+  }
+  .btn-vw {
+    width: 30vw;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .line-height {
+    margin-top: 20px;
+    line-height: 1.5em;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  .vh-container {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  .vh-block {
+    width: 30%;
+    height: 20vh;
+    background: #9cc;
+    border: 1px solid #666;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="half">Блок 1 (50% ширины)</div>
+  <div class="half">Блок 2 (50% ширины)</div>
+</div>
+
+<div class="parent-text">
+  Родительский блок с font-size: 20px;
+  <div class="child-text">Дочерний текст с font-size: 2em (40px)</div>
+</div>
+
+<button class="btn-vw">Кнопка шириной 30vw</button>
+
+<p class="line-height">
+  Этот параграф имеет межстрочный интервал 1.5em. Это значит, что высота строки равна 1.5 размера шрифта.
+  В отличие от px, em зависит от размера шрифта, что даёт гибкость при масштабировании текста.
+</p>
+
+<div class="vh-container">
+  <div class="vh-block"></div>
+  <div class="vh-block"></div>
+  <div class="vh-block"></div>
+</div>
+
+</body>
+</html>

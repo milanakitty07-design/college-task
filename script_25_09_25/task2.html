@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Изображения и блоки</title>
+<style>
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .fix-block {
+    width: 500px;
+    background: lightblue;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  .percent-block {
+    width: 50%;
+    background: lightcoral;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  .minmax-block {
+    width: 50%;
+    min-width: 200px;
+    max-width: 400px;
+    background: lightgreen;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  .full-img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  .gallery {
+    display: flex;
+    gap: 5px;
+    margin-top: 20px;
+  }
+  .gallery img {
+    width: 33.3%;
+    height: auto;
+  }
+  @media (max-width: 600px) {
+    .gallery {
+      flex-direction: column;
+    }
+    .gallery img {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<img src="https://placehold.co/800x400" alt="картинка">
+
+<div class="fix-block">ширина 500px</div>
+<div class="percent-block">ширина 50%</div>
+
+<div class="minmax-block">min-width 200px, max-width 400px, width 50%</div>
+
+<img class="full-img" src="https://placehold.co/300x150" alt="растягивающаяся картинка">
+
+<div class="gallery">
+  <img src="https://placehold.co/300x200?text=1" alt="1">
+  <img src="https://placehold.co/300x200?text=2" alt="2">
+  <img src="https://placehold.co/300x200?text=3" alt="3">
+</div>
+
+</body>
+</html>
