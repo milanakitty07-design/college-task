@@ -9,8 +9,8 @@
 ![Geometry Calculations результат 1](./python_result_1.png)
 
 ### HTML визитка
-Файл: [business_card.html](./business_card.html)
-![HTML визитка результат 1](./business_card_result_1.png)
+Файл: [card.html](card.html)
+![HTML визитка результат 1](card.png)
 
 **Онлайн версия визитки:**
 [https://codepen.io/Milana-Menschen-Karateeva/pen/bNEvYqg](https://codepen.io/Milana-Menschen-Karateeva/pen/bNEvYqg)
