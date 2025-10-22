@@ -1,9 +1,9 @@
-# Основы программирования - Геометрия и Визитка от 3 сентября
+# begin1 - begin7 и Визитка от 3 сентября
 
 Выполнила: Милана Каратеева  
 Колледж: Алматинский экономический колледж, группа Web-3-5
 
-### Geometry Calculations
+### begin1 - begin7
 Файл: [python.py](./python.py)
 
 ![Geometry Calculations результат 1](./python_result_1.png)
