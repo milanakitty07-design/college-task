@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Пользователи</title>
+</head>
+<body>
+  <h1>Список пользователей</h1>
+  <ul>
+    {% for u in users %}
+      <li>
+        {{ u.name }} - {{ u.email }}
+        <form method="post" action="{% url 'delete_user' u.id %}" style="display:inline;">
+          {% csrf_token %}
+          <button type="submit">Удалить</button>
+        </form>
+      </li>
+    {% empty %}
+      <li>Пользователей нет</li>
+    {% endfor %}
+  </ul>
+  <p><a href="{% url 'signup' %}">Регистрация</a></p>
+</body>
+</html>
